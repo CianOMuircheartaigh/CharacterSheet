@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+    <form action="">
+        <label for="">
+            Character Name:
+        </label>
+        <input type="text" id="characterName">
+        <br>
+        <label for="birthday">
+            Character's Date of Birth:
+        </label>
+        <input type="date" name="birthday" id="birthday">
+        <br>
+        <label for="job">Class:</label>
+        <select name="" id="job">
+            <option value="fighter">Fighter</option>
+            <option value="rouge">Rouge</option>
+            <option value="mage">Mage</option>
+        </select>
+        <br>
+        <label for="level">
+            Chracter Level:
+        </label>
+        <input type="number" name="level" id="level" min="1" max="20">
+        <br>
+        <label for="">
+            Stats:
+        </label>
+        <br>
+        <label for="strength">Str: </label>
+        <input type="number" name="strength" id="strength" min="0" max="5">
+        <br>
+        <label for="dexterity">Dex:</label>
+        <input type="number" name="dexterity" id="dexterity" min="0" max="5">
+        <br>
+        <label for="constitution">Con:</label>
+        <input type="number" name="constitution" id="constitution" min="0" max="5">
+        <br>
+        <label for="inteligence">Int:</label>
+        <input type="number" name="inteligence" id="inteligence" min="0" max="5">
+        <br>
+        <label for="wisdom">Wis:</label>
+        <input type="number" name="wisdom" id="wisdom" min="0" max="5">
+        <br>
+        <label for="charisma">Cha:</label>
+        <input type="number" name="charisma" id="charisma" min="0" max="5">
+        <br>
+        <label for="">
+            Skills
+        </label>
+        <br>
+        <ul id="skills">
+            <li>
+                <label for="">Charge</label>
+                <input type="checkbox" name="Charge" id="charge">
+            </li>
+            <li>
+                <label for="">Retreat</label>
+                <input type="checkbox" name="Retreat" id="retreat">
+            </li>
+            <li>
+                <label for="">Stealth</label>
+                <input type="checkbox" name="Stealth" id="stealth">
+            </li>
+        </ul>
+        <br>
+        <label for="">
+            Magic
+        </label>
+        <br>
+        <ul id="magic">
+            <li>
+                <label for="">Fireball</label>
+                <input type="checkbox" name="Fireball" id="fireball">
+            </li>
+            <li>
+                <label for="">Flight</label>
+                <input type="checkbox" name="Flight" id="flight">
+            </li>
+            <li>
+                <label for="">Invisible</label>
+                <input type="checkbox" name="Invisible" id="invisible">
+            </li>
+        </ul>
+        <br>
+        <label for="">
+            Weapon
+        </label>
+        <select name="" id="weapon">
+            <option value="Sword">Sword</option>
+            <option value="Daggers">Daggers</option>
+            <option value="Staff">Staff</option>
+        </select>
+        <br>
+        <label for="">
+            Armor
+        </label>
+        <select name="" id="armor">
+            <option value="Heavy Armor">Heavy Armor</option>
+            <option value="Light Armor">Light Armor</option>
+            <option value="Robe">Robe</option>
+        </select>
+        <br>
+        <label for="">
+            Money:
+        </label>
+        <input type="number" name="money" id="money" min="0" max="10000">
+        <br>
+        <label for="">
+            Alignment
+        </label>
+        <br>
+        <ul id="alignment">
+            <label for="">Good</label>
+            <input type="radio" name="alignment" id="good">
+            <label for="">Neutral</label>
+            <input type="radio" name="alignment" id="neutral">
+            <label for="">Evil</label>
+            <input type="radio" name="alignment" id="evil">   
+        </ul>
+        <br>
+        <button type="button" onclick="ProcessForm()"> Create Character </button>
+    </form>
+
+    <div id="Result">
+    <h2 id="nameDetails"></h2>
+    <h3 id="dob"></h3>
+    <h3 id="PlayerJob"></h3>
+    <h3 id="currentLevel"></h3>
+    <h3 id="currentStrength"></h3>
+    <h3 id="currentDexterity"></h3>
+    <h3 id="currentConstitution"></h3>
+    <h3 id="currentInteligence"></h3>
+    <h3 id="currentWisdom"></h3>
+    <h3 id="currentCharisma"></h3>
+    <h3 id="skillsOutput"></h3>
+    <h3 id="magicOutput"></h3>
+    <h3 id="currentWeapon"></h3>
+    <h3 id="currentArmor"></h3>
+    <h3 id="currentMoney"></h3>
+    <h3 id="alignmentOutput"></h3>
+    </div>
+     
+    <script src="Java/code.js"></script>
+</body>
+</html>

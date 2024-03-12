@@ -1,0 +1,18 @@
+
+form{
+    background-color: cornsilk;
+    width: 300px;
+    border-style: outset;
+    border-radius: 3%;
+    margin: 2%;
+    padding: 1%;
+}
+
+div {
+    background-color: thistle;
+    width: 300px;
+    border-style: outset;
+    border-radius: 3%;
+    margin: 2%;
+    padding: 1%;
+}
